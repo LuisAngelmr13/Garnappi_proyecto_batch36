@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import React, { Component } from 'react';
 import './App.css';
+import Navbar from './components/Navbar'
+import Carrousel from './components/Carrousel'
+import Cards from './components/Cards'
+import FormularioL from './components/FormularioL';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render(){
+    return (
+      <div>
+        <Navbar />
+        <div>
+          <Carrousel/>
+          <Cards/>
+        </div>
+
+      </div>      
+    );
+  }
+}
+
+class App extends Component {
+  render(){
+    return(
+      <div>
+        <Navbar/>
+        <div>
+          <FormularioL/>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;

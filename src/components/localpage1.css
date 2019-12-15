@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    background-color: antiquewhite;
+}
+
+.imagenesTop{
+   
+    display: flex;
+    justify-content: space-around;
+    width: 955px ;
+    margin-top: 30px;
+}
+
+
+.dato{
+    color:  rgb(255, 21, 111);
+    font-size: 17px;
+    
+}
+
+.list-group {
+    font-size: 40pt;
+}
+
+.card-body{
+    width: 965px;
+    background-color: rgb(255, 21, 111);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-top: 20px;
+    
+}
+
+.cara1{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.parrafo1{
+    
+    background-color: rgb(255, 209, 4);
+   font-size: 50px;
+   margin-top: 25px;
+    
+}
+
+.caritas{
+    width: 955px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logoimg{
+    width: 60px;
+ }
