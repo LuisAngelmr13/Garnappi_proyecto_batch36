@@ -8,6 +8,7 @@ import Navbar from './components/Navbar'
 import Carrousel from './components/Carrousel'
 import Cards from './components/Cards'
 import FormularioL from './components/FormularioL';
+import FormularioG from './components/FormularioG';
 
 class App extends Component {
   render(){
@@ -31,6 +32,19 @@ class App extends Component {
         <Navbar/>
         <div>
           <FormularioL/>
+        </div>
+      </div>
+    );
+  }
+}
+
+class App extends Component{
+  render(){
+    return(
+      <div>
+        <Navbar/>
+        <div>
+          <FormularioG/>
         </div>
       </div>
     );
