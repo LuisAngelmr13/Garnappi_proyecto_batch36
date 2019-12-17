@@ -41,10 +41,15 @@
 ​
 ​
 .customCard {
-    border-radius: 0 !important;
+    Border-radius: 0 !important;
     background-color: rgb(255, 209, 4) !important;
     caret-color: #fff !important;
     border: solid 1px #fff !important;
     
 }
 
+.form-group{
+    width: 955px;
+    margin-top: 25px;
+    
+}

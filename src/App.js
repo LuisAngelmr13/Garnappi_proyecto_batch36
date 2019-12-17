@@ -23,32 +23,6 @@ class App extends Component {
       </div>      
     );
   }
-}
 
-class App extends Component {
-  render(){
-    return(
-      <div>
-        <Navbar/>
-        <div>
-          <FormularioL/>
-        </div>
-      </div>
-    );
-  }
-}
-
-class App extends Component{
-  render(){
-    return(
-      <div>
-        <Navbar/>
-        <div>
-          <FormularioG/>
-        </div>
-      </div>
-    );
-  }
-}
 
 export default App;
