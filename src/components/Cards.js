@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 
+
 class Cards extends Component {
     render(){
         return(
+            <section>
+                
             <h1 className="textopri my-3">"Que son las garnachas...!!??"</h1>
 
             <p className="texto1">El término garnacha, en algunas partes de México se utiliza para denominar, casi de manera    genérica,
@@ -142,7 +145,8 @@ class Cards extends Component {
                     *Preparada con aproximadamente 85 cocineros locales, la torta más grande del mundo, estuvo rellena con más de 60 ingredientes hasta alcanzar sabores clásicos como milanesa, carne al pastor y otros exóticos como el de mantarraya, abominable bocadillo, el cual midió 67.80 metros de longitud y obtuvo un peso de 820 kilogramos. 
                 </p>
             </div>
-            
+            </section>
+
         );
     }
 }

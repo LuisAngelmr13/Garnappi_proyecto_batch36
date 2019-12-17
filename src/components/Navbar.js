@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import logo from './assets/logo.jpg';
+import './style.css'
 
 class Navbar extends Component {
   render(){
@@ -7,7 +9,7 @@ class Navbar extends Component {
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
                 <a className="navbar-brand" href="#">
                     <form className="form-inline"></form>
-                    <img className="logoimg" src="./components/assets/LogoSample_ByTailorBrands.jpg" alt="Nav Bar Logo"/>
+                    <img className="logoimg" src={logo} alt="Nav Bar Logo"/>
                 </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -32,7 +34,7 @@ class Navbar extends Component {
                         <li className="nav-item dropdown form-inline">
                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registro</a>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a className="dropdown-item" href="formularioL.html">Locatario</a>
+                                <a className="dropdown-item" href="./registerLocal">Locales</a>
                                 <a className="dropdown-item" href="formularioG.html">Garnachero</a>
                                 <div className="dropdown-divider"></div>
                             </div>
@@ -45,7 +47,7 @@ class Navbar extends Component {
                 </div>
             </nav>
         </section>
-    )
+    );
   }
 }
 

@@ -3,50 +3,28 @@ import $ from 'jquery';
 import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React, { Component } from 'react';
-import './App.css';
+  import './App.css';
 import Navbar from './components/Navbar'
-import Carrousel from './components/Carrousel'
-import Cards from './components/Cards'
+import Home from './components/Home'
 import FormularioL from './components/FormularioL';
 import FormularioG from './components/FormularioG';
+import {BrowserRouter,Route} from 'react-router-dom';
+import RegisterLocales from './components/RegisterLocales';
 
-class App extends Component {
-  render(){
-    return (
-      <div>
-        <Navbar />
-        <div>
-          <Carrousel/>
-          <Cards/>
-        </div>
-
-      </div>      
-    );
-  }
-}
 
 class App extends Component {
   render(){
     return(
-      <div>
-        <Navbar/>
+      <BrowserRouter>
         <div>
-          <FormularioL/>
+          <Navbar/>
+          <main>
+            <Route exact path='/home' component={Home} />
+            <Route exact path='/registerLocal' component={RegisterLocales} />
+            <Route exact path='/formularioG' component={FormularioG} />
+          </main>
         </div>
-      </div>
-    );
-  }
-}
-
-class App extends Component{
-  render(){
-    return(
-      <div>
-        <Navbar/>
-        <div>
-          <FormularioG/>
-        </div>
-      </div>
+      </BrowserRouter>
     );
   }
 }

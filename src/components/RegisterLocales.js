@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
+import './style.css'
+import './RegisterLocales'
 import axios from 'axios';
 
 class RegisterLocales extends Component{
     constructor(props){
         super(props);
-        this.state={
+        this.state={    
             nombre: '',
             dueño: '',
-            descripcion: 0,
-            horario: 'M',
+            descripcion: '',
+            horario: '',
             platillos: "tortas"
         }
     }
@@ -35,43 +37,43 @@ class RegisterLocales extends Component{
 
     render(){
         return (
-            <div>
+            <div className= "row form-group col-md-7 flex">
                 <form onSubmit={this.onClickSubmit}>
-                    <label>Nombre del Local</label>
+
+                    <label>Nombre del Local: </label>
                     <input id="nombre" type="text"
                         onChange={this.onChangeInput} 
                         value={this.state.nombre}
                     >   
                     </input>
 
-                    <label>Dueño del Local</label>
+                    <label>Dueño del Local:</label>
                     <input id="dueño" type="text"
                         onChange={this.onChangeInput} 
                         value={this.state.dueño}
                     >   
                     </input>
-                    <label>Descripción</label>
+                    <label>Descripción:</label>
                     <input id="descripcion" type="text" 
                         onChange={this.onChangeInput}
                         value={this.state.descripcion}
                     >
                     </input>       
-                    <label>Horario</label>
+                    <label>Horario:</label>
                     <input id="horario" type="text"
                         onChange={this.onChangeInput} 
                         value={this.state.horario}
                     >   
-                    </input>
-                    <label>Platillos</label>
-                    <input id="platillos" type="text"onChange={this.onChangeInput}></input>  
-                    <label>Platillos</label>
+                    </input> 
+                    <label>Platillos:</label>
                     <select id="Platillos" onChange={this.onChangeInput}>
                         <option value="Tortas">Tortas</option>
                         <option value="Gorditas">Gorditas</option>
                     </select>
 
-                    <button type="submit">Guardar director</button>
-
+                    <div>
+                    <button type="submit">Guardar Local</button>
+                    </div>
                 </form>
             </div>
         )

@@ -39,7 +39,7 @@ class Carrousel extends Component{
                 </div>
             </section>
             
-        )
+        );
     }
 }
 
