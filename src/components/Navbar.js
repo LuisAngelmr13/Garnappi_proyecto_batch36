@@ -17,7 +17,7 @@ class Navbar extends Component {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">Inicio <span className="sr-only">(current)</span></a>
+                            <a className="nav-link" href="./">Inicio <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categoria</a>
@@ -35,7 +35,7 @@ class Navbar extends Component {
                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registro</a>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a className="dropdown-item" href="./registerLocal">Locales</a>
-                                <a className="dropdown-item" href="formularioG.html">Garnachero</a>
+                                <a className="dropdown-item" href="./registerGarnachero">Garnachero</a>
                                 <div className="dropdown-divider"></div>
                             </div>
                         </li>

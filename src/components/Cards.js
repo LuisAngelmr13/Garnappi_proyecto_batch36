@@ -16,7 +16,7 @@ class Cards extends Component {
             </p>
             <section className="row justify-content-center justify-content-md-around my-4">
 
-                <div className="card-styler" style={{width: "18rem", border: "solid 4px rgb(255, 21, 111); "}}>
+                <div className="card-styler" style={{width: "18rem", border: "solid 4px rgb(255, 21, 111)"}}>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ9anZ--3c2aqPhF2Q_7ETI2RXWK88rO4W0NtKNXw0SFn9BXdBrA&amp;s"
                     className="card-img-top" alt="tortas de carnitas"/>
                     <div className="card-body d-flex flex-column align-items-center" className="stylecards">
@@ -33,7 +33,7 @@ class Cards extends Component {
                     </div>
                 </div>
 
-                <div className="card-styler my-4" style={{width: "18rem", border: "solid 4px rgb(255, 21, 111); "}}>
+                <div className="card-styler my-4" style={{width: "18rem", border: "solid 4px rgb(255, 21, 111)"}}>
                     <img src="https://img.chilango.com/2017/08/machetes.jpg" className="card-img-top" alt="Los pollitos"/>
                     <div className="card-body d-flex flex-column align-items-center">
                         <h5 className="card-title">Los Pollitos</h5>
