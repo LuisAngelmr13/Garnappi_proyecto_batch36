@@ -24,7 +24,7 @@ class RegisterLocales extends Component{
     onClickSubmit = (e) => {
         e.preventDefault(); // Evita que se recargue cuando se oprime el btn guardar
         console.log(this.state);
-        const URL = 'https://tranquil-shelf-14309.herokuapp.com/locales'
+        const URL = 'https://guarded-spire-32877.herokuapp.com/locales'
         axios.post(URL, this.state)
         .then((result) => {
             console.log(result);

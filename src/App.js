@@ -10,7 +10,6 @@ import {BrowserRouter,Route} from 'react-router-dom';
 import RegisterLocales from './components/RegisterLocales';
 import RegisterGarnachero from './components/RegisterGarnachero';
 
-
 class App extends Component {
   render(){
     return(
