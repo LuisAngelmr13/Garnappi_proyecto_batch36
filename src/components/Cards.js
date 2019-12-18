@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
+
 class Cards extends Component {
     render(){
         return(
-            <section className="row justify-content-center justify-content-md-around my-4">
+            <section>
+                
             <h1 className="textopri my-3">"Que son las garnachas...!!??"</h1>
 
             <p className="texto1">El término garnacha, en algunas partes de México se utiliza para denominar, casi de manera    genérica,
@@ -14,7 +16,7 @@ class Cards extends Component {
             </p>
             <section className="row justify-content-center justify-content-md-around my-4">
 
-                <div className="card-styler" style={{width: "18rem", border: "solid 4px rgb(255, 21, 111); "}}>
+                <div className="card-styler" style={{width: "18rem", border: "solid 4px rgb(255, 21, 111)"}}>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ9anZ--3c2aqPhF2Q_7ETI2RXWK88rO4W0NtKNXw0SFn9BXdBrA&amp;s"
                     className="card-img-top" alt="tortas de carnitas"/>
                     <div className="card-body d-flex flex-column align-items-center" className="stylecards">
@@ -31,7 +33,7 @@ class Cards extends Component {
                     </div>
                 </div>
 
-                <div className="card-styler my-4" style={{width: "18rem", border: "solid 4px rgb(255, 21, 111); "}}>
+                <div className="card-styler my-4" style={{width: "18rem", border: "solid 4px rgb(255, 21, 111)"}}>
                     <img src="https://img.chilango.com/2017/08/machetes.jpg" className="card-img-top" alt="Los pollitos"/>
                     <div className="card-body d-flex flex-column align-items-center">
                         <h5 className="card-title">Los Pollitos</h5>
@@ -143,8 +145,8 @@ class Cards extends Component {
                     *Preparada con aproximadamente 85 cocineros locales, la torta más grande del mundo, estuvo rellena con más de 60 ingredientes hasta alcanzar sabores clásicos como milanesa, carne al pastor y otros exóticos como el de mantarraya, abominable bocadillo, el cual midió 67.80 metros de longitud y obtuvo un peso de 820 kilogramos. 
                 </p>
             </div>
-        </section>
-            
+            </section>
+
         );
     }
 }

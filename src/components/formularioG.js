@@ -5,6 +5,7 @@ class FormularioG extends  Component{
     render(){
         return (
             <section>
+                
                 <h2 className="Formulario text-center my-5">Formulario de Registro</h2>
                 
                 <div className="form-group col-md-7">

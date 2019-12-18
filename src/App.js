@@ -5,24 +5,26 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import React, { Component } from 'react';
 import './App.css';
 import Navbar from './components/Navbar'
-import Carrousel from './components/Carrousel'
-import Cards from './components/Cards'
-import FormularioL from './components/FormularioL';
-import FormularioG from './components/FormularioG';
+import Home from './components/Home'
+import {BrowserRouter,Route} from 'react-router-dom';
+import RegisterLocales from './components/RegisterLocales';
+import RegisterGarnachero from './components/RegisterGarnachero';
 
 class App extends Component {
   render(){
-    return (
-      <div>
-        <Navbar />
+    return(
+      <BrowserRouter>
         <div>
-          <Carrousel/>
-          <Cards/>
+          <Navbar/>
+          <main>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/registerLocal' component={RegisterLocales} />
+            <Route exact path='/registerGarnachero' component={RegisterGarnachero} />
+          </main>
         </div>
-
-      </div>      
+      </BrowserRouter>
     );
   }
-
+}
 
 export default App;
